@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Owned Luxury Car Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cars">Cars</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to Pre-Owned Luxury Car Website</h1>
+            <p>Your gateway to discovering pre-owned luxury cars.</p>
+        </section>
+        <section id="cars">
+            <h2>Our Cars</h2>
+            <div class="car-card" onclick="location.href='car1.html'">
+                <img src="car1.webp" alt="Porsche Panamera">
+                <h3>Porsche Panamera</h3>
+                <p>$100,000</p>
+            </div>
+            <div class="car-card" onclick="location.href='car2.html'">
+                <img src="car2.jpg" alt="Land Cruiser">
+                <h3>LC 300</h3>
+                <p>$200,000</p>
+            </div>
+            <!-- Add more car cards here -->
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2022 Pre-Owned Luxury Car Website. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
